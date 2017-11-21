@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+
+
+            <ScrollView
+                android:id="@+id/sc_movie_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <include layout="@layout/layout_movie_basic_info" />
+
+
+                    <TextView
+                        android:id="@+id/expandText_movie_Desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="Movie Description"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_14"
+                        android:background="@color/divider_normal" />
+
+                    <LinearLayout
+                        android:id="@+id/rv_movie_star"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_14">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Movie Stars" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_14"
+                        android:background="@color/divider_normal" />
+
+
+                    <LinearLayout
+                        android:id="@+id/rv_movie_photos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/white" >
+
+                        <TextView
+                            android:text="Movie Photos"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="@dimen/dp_14"
+                        android:background="@color/divider_normal" />
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/returnImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_back_big" />
+
+
+</FrameLayout>
+
+
+
+
+
+
+

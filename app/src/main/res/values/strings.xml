@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MDS</string>
+    <string name="underline">Please <u>Login </u>first.</string>
+</resources>

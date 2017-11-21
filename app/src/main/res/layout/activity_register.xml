@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="assignment3.fit4039.monash.mds.HomePage.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/SexRadioGroup"
+                android:layout_alignParentStart="true"
+                android:text="Gender:"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp"
+                android:ems="10"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/surnameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/fnameEditText"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Surname"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/dobEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/surnameEditText"
+                android:layout_marginTop="18dp"
+                android:ems="10"
+                android:hint="Date Of Birth"
+                android:focusableInTouchMode="false"
+                android:inputType="date" />
+
+            <RadioGroup
+                android:id="@+id/SexRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dobEditText"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/genderTextView"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/maleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/SexRadioGroup"
+                    android:layout_marginStart="46dp"
+                    android:layout_toEndOf="@+id/SexRadioGroup"
+                    android:onClick="onSexRadioButtonClicked"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/femaleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/SexRadioGroup"
+                    android:layout_marginLeft="22dp"
+                    android:layout_weight="1"
+                    android:onClick="onSexRadioButtonClicked"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/EmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/SexRadioGroup"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/EmailEditText"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/re_enter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/passwordEditText"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re_enter_password"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_orange_light"
+                android:text="REGISTER" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

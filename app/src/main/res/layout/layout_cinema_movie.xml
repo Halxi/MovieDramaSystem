@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/layout_select_movie"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/ic_blur_bg"
+        android:foreground="@drawable/ic_movie_detail_fg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/selected_movie_image"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        app:srcCompat="@drawable/guardians_of_the_galaxy_2" />
+
+    <ImageView
+        android:id="@+id/trangleImage"
+        android:layout_width="20dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/selected_movie_image"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/white_trangle" />
+
+</RelativeLayout>

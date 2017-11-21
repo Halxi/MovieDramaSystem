@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/list_cinema_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="Cinema Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/list_cinema_name"
+        android:layout_below="@+id/list_cinema_name"
+        android:layout_marginTop="19dp"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/tagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/addressText"
+        android:layout_below="@+id/addressText"
+        android:layout_marginTop="20dp"
+        android:text="Cinema Tag" />
+
+    <TextView
+        android:id="@+id/list_cinema_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="25"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/list_cinema_name"
+        android:layout_toEndOf="@+id/list_cinema_name" />
+
+    <TextView
+        android:id="@+id/audText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUD"
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_alignBaseline="@+id/list_cinema_price"
+        android:layout_alignBottom="@+id/list_cinema_price"
+        android:layout_toEndOf="@+id/list_cinema_price"
+        android:layout_marginStart="11dp" />
+</RelativeLayout>
